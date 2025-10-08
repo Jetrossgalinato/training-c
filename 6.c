@@ -1,3 +1,8 @@
+// Problem: Find Frequency of Each Element in an Array
+// Description:
+// Write a C program that finds how many times each unique element appears in an array. 
+// Print each unique element along with its frequency (count).
+
 #include <stdio.h>
 
 int main(){
