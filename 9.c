@@ -1,3 +1,9 @@
+// Problem: Find All Missing Numbers in a Range
+// Description:
+// Write a C program that finds all missing numbers in an array. 
+// Given an array containing numbers from 1 to N (with some numbers missing), 
+// find and print all the missing numbers in ascending order.
+
 #include<stdio.h>
 
 int main(){
