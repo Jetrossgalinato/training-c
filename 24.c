@@ -13,7 +13,13 @@ struct Reindeer{
 
 int main() {
     
-    struct Reindeer* arr = (struct Reindeer*) malloc(9 * sizeof(struct Reindeer));
+    struct Reindeer* arr = malloc(9 * sizeof(struct Reindeer));
+
+    if(arr == NULL){
+
+        fprintf(stderr, "Memory Allocation Failed\n");
+        return 1;
+    }
     
     strcpy(arr[0].name, "Dasher");
     arr[0].year = 1820;
@@ -41,6 +47,8 @@ int main() {
             printf("\n%s",arr[i].name);
         }
     }
+
+    printf("\n");
     
     free(arr);
     

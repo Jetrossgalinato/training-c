@@ -40,6 +40,8 @@ int main(){
 
     if(temp == NULL){
         fprintf(stderr,"Failed to realloc memory\n");
+        free(arr);
+        return 1;
     }else{
         arr = temp;
     }
@@ -47,7 +49,7 @@ int main(){
     strcpy(arr[8].name, "Rudolph");
     arr[8].age = 1939;
 
-    printf("The 9th reindeer is %s, born in %d",arr[8].name,arr[8].age);
+    printf("The 9th reindeer is %s, born in %d\n",arr[8].name,arr[8].age);
 
     free(arr);
     return 0;
