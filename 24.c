@@ -48,7 +48,7 @@ int main() {
         }
     }
 
-    printf("\n");
+    printf("\n\n");
     
     free(arr);
     
